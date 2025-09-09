@@ -1,0 +1,27 @@
+# Appium Configuration for iOS Automation
+# This file contains all the necessary configuration for running iOS automation tests
+
+# Appium Server Configuration
+appium_server_url: "http://localhost:4723"
+
+# iOS Device Configuration
+device_name: "iPhone 15"
+platform_version: "17.0"
+udid: "auto" # Use "auto" to automatically detect connected device
+
+# App Configuration
+bundle_id: "com.example.app" # Replace with your app's bundle ID
+app_path: "" # Path to .app file (leave empty if using bundle_id)
+
+# Reset Options
+no_reset: false # Don't reset app state between sessions
+full_reset: false # Uninstall and reinstall app between sessions
+
+# Wait Timeouts (in seconds)
+implicit_wait: 10
+explicit_wait: 10
+# Additional iOS-specific capabilities can be added here
+# For example:
+# wda_launch_timeout: 60
+# wda_connection_timeout: 60
+# new_command_timeout: 300
